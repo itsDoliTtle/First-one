@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Yonnilight Enterprise </title>
+    <link rel="icon" href="Images/YL Logo blue.png" id="logo">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <script src="home.js" defer></script>
+
+</head>
+<body>
+<div class="Main-container">
+    <div class="homeside">
+        <nav>
+            <div class="logo">Doli<span>Ttle </span><b>.</b></div>
+            <ul class="navItem">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>                
+            </ul>
+            <div class="search-bar">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </nav>
+
+        <div class="contentA">
+            <div class="content">
+                <h1>Welcome to<span>Yonnilight</span><br>Enterprise</h1>
+                <p class="par">We specialize in the uses of web technologies such as <br> HTML (Hypertext Markup Language), <br> CSS (Cascading Style Sheets) and <br>Javascript to implement UI designs. </p>
+                <button class="join"><a href="#">JOIN US!!</a></button>
+            </div>
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here"> 
+                <input type="password" name="password" placeholder="Enter Password Here"> 
+                <button class="btnn"><a href="#">Login</a></button>
+
+                <p class="link">Don't have an account?<br>
+                <a href="#">Sign up</a> here!</a></p>
+                <p class="log-with">Log in with</p>
+            </div>
+        </div>
+    </div>
+</div>
+                             <!-- (((The About))) -->
+
+<section class="about-container">
+    <div class="about">
+        <img src="Images/about img.jpg" alt="">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <h5>Developer <span>& Designer</span></h5>
+                    <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with  web animations. A responsive design makes your website accessiblbe to all users, regardless of their device.</p>
+                    <button type="button">Let's Talk</button>
+        </div>
+    </div>
+</section>
+
+                            <!-- Service Section -->
+<section class="service-container">
+    <div class="service">
+        <h1 class="h1" >My Services</h1>
+        <div class="services-list">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta eius harum dignissimos modi sapiente, in magni repudiandae eaque.</p>
+                <a href="#">Learn More>></a>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta eius harum dignissimos modi sapiente, in magni repudiandae eaque.</p>
+                <a href="#">Learn More>></a>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>Graphic Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta eius harum dignissimos modi sapiente, in magni repudiandae eaque.</p>
+                <a href="#">Learn More>></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MY Services Ends -->
+
+
+
+<!-- Consultants Starts-->
+<section class="consultants-container">
+    <div class="consult">
+        <h1 class="h1" >Consultant</h1>
+        <div class="veiw-box">
+            <div id="consultList">
+
+                <div class="user">
+                    <img src="Images/E2.jpeg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae, enim ipsum deleniti cupiditate pariatur ex repellendus, numquam quis itaque aliquid et perspic! Et numquam provident, odio accusantium iusto nisi?</p>
+                    <h3>Tony Stark</h3>
+                </div>
+
+                <div class="user space">
+                    <img src="Images/C2.jpeg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae, enim ipsum deleniti cupiditate pariatur ex repellendus, numquam quis itaque aliquid et perspiciatis! Et numquam provident, odio accusantium iusto nisi?</p>
+                    <h3>Henny Kevil</h3>
+                </div>
+
+                <div class="user">
+                    <img src="Images/I2.jpeg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae, enim ipsum deleniti cupiditate pariatur ex repellendus, numquam quis itaque aliquid et perspiciatis! Et numquam provident, odio accusantium iusto nisi?</p>
+                    <h3>Steve Macule</h3>
+                </div>
+
+            </div>
+
+            <div class="controls">
+                <span id="control1"></span>
+                <span id="control2" class="active"></span>
+                <span id="control3"></span>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    let consultList = document.getElementById('consultList');
+    let control1 = document.getElementById('control1');
+    let control2 = document.getElementById('control2');
+    let control3 = document.getElementById('control3');
+
+
+    control1.onclick=function(){
+        consultList.style.transform = "translateX(870px)";
+        control1.classList.add('active');
+        control2.classList.remove('active');
+        control3.classList.remove('active');
+    }
+
+    control2.onclick=function(){
+        consultList.style.transform = "translateX(0px)";
+        control1.classList.remove('active');
+        control2.classList.add('active');
+        control3.classList.remove('active');
+    }
+
+    control3.onclick=function(){
+        consultList.style.transform = "translateX(-870px)";
+        control1.classList.remove('active');
+        control2.classList.remove('active');
+        control3.classList.add('active');
+    }
+
+</script>
+
+<!-- Consultants Ends-->
+
+<!-- Contact Starts-->
+<div class="contact_container">
+    <div class="contact">
+        <h1 class="h1">Contact Us</h1>
+        <div class="row">
+            <div class="left">
+                <p><i class="fa-regular fa-paper-plane"></i>yonnilight@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>08070670565</p>
+                <p><i class="fa-brands fa-whatsapp"></i>09036652643</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>  
+                <a href="cv sample.pdf" download class="btn">Download CV</a>       
+            </div>
+
+            <div class="right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btnn2">Submit</button>
+                </form>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<?php 
+
+
+?>
+
+
+</body>
+</html>
